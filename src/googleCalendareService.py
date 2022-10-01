@@ -19,6 +19,7 @@ SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 CALENDAR = 'bn0trnr1598i0m2j67h3qs5kh0@group.calendar.google.com'
 DEFAULTCOLOR = '#fa573c'
 WEEKDAYS = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
+DAYCOUNT = 14
 
 # Возвращает список дней начиная с сегодняшнего дня, в каждом дне список событий, заплонированных на этот день.
 def getGroupedEvents():
@@ -33,22 +34,20 @@ def getGroupedEvents():
 # Группирует список событий по дням
 def groupEventsByDays(events):
     days = []
+    today = datetime.datetime.today()
+    for i in range(DAYCOUNT):
+        date = (today + datetime.timedelta(days = i)).date()
+        weekDayNum = date.weekday()
+        weekDayName = WEEKDAYS[weekDayNum]
+        days.append(DayViewModel(date, weekDayNum,  weekDayName, []))
+
+
     for event in events:
-        eventWasAdded = False
         for day in days:
             if (day.date == event.startDT.date()):
                 order = len(day.events)
                 day.events.append(EventViewModel(event, order))
-                eventWasAdded = True
                 break
-
-        if (eventWasAdded): continue
-
-        date = event.startDT.date()
-        weekDayNum = date.weekday()
-        weekDayName = WEEKDAYS[weekDayNum]
-        days.append(DayViewModel(date, weekDayNum,  weekDayName, [EventViewModel(event, 0)]))
-
     return days
 
 # Получить из Гугла список событий
@@ -61,7 +60,8 @@ def getEvents(service):
     calendarColor = calendar.get('backgroundColor', None)
     # logger.log('calendar = ' + json.dumps(calendar))
 
-    now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
+    currentDayStart = datetime.datetime.combine(datetime.datetime.utcnow(), datetime.datetime.min.time())
+    now = currentDayStart.isoformat() + 'Z'  # 'Z' indicates UTC time
     apiEventsResult = service.events().list(
         calendarId = calendar['id'], 
         timeMin = now,
