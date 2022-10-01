@@ -20,6 +20,7 @@ CALENDAR = 'bn0trnr1598i0m2j67h3qs5kh0@group.calendar.google.com'
 DEFAULTCOLOR = '#fa573c'
 WEEKDAYS = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
 
+# Возвращает список дней начиная с сегодняшнего дня, в каждом дне список событий, заплонированных на этот день.
 def getGroupedEvents():
     service = getService()
     events = getEvents(service)
@@ -29,7 +30,7 @@ def getGroupedEvents():
     return groupedEvents
 
 
-
+# Группирует список событий по дням
 def groupEventsByDays(events):
     days = []
     for event in events:
@@ -50,6 +51,7 @@ def groupEventsByDays(events):
 
     return days
 
+# Получить из Гугла список событий
 def getEvents(service):   
 
     colors = getColors(service)
@@ -102,6 +104,7 @@ def getEvents(service):
     # logger.log(json.dumps(vmEvents))
     return vmEvents
 
+# Получить из Гугла клендарь, с которым следует работать
 def getCalendar(service):
     calendars_result = service.calendarList().list().execute()
 
@@ -118,11 +121,13 @@ def getCalendar(service):
 
     return None
 
+# Получить из Гугла список цветов
 def getColors(service):
     colors_result = service.colors().get().execute()
     colors = colors_result.get('event', [])
     return colors
 
+# По событию определить его модуль и систему
 def defineModul(apiEvent):
     moduls = advantureModuls.MODULS
     systems = advantureModuls.SYSTEMS
@@ -194,6 +199,7 @@ def defineModul(apiEvent):
     # logger.log('Весь полученный модуль: ' + retModul.toJSON())
     return retModul
 
+# Пройти авторизацию в Гугле и получить объект службы календарей, который необходим в дальнейшей работе
 def getService():
     creds = None
     # The file token.json stores the user's access and refresh tokens, and is
@@ -220,6 +226,7 @@ def getService():
     except HttpError as error:
         logger.log('Ошибка в процессе получения API службы: {}'.format(error))
 
+# Модель дня в календаре для отображения
 class DayViewModel:
   def __init__(self, date, weekDayNum,  weekDayName, events):
     self.date = date
@@ -230,6 +237,7 @@ class DayViewModel:
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
+# Модель события для отображения
 class EventViewModel:
   def __init__(self, eventModel,  order):
     self.startTime = eventModel.startDT.time()
@@ -244,6 +252,7 @@ class EventViewModel:
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
+# Модель события, полученная из данных Гугл события
 class EventModel:
   def __init__(self, startDT, name, description, modulName, systemName, iconPath, color):
     self.startDT = startDT
