@@ -1,0 +1,30 @@
+<html dir="ltr" lang="ru">
+<head>
+</head>
+<body>
+    <h1>Даров!</h1>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+    function start() {
+    // 2. Initialize the JavaScript client library.
+    gapi.client.init({
+        'apiKey': 'AIzaSyAQcgWJMcJNWziqI60YFNAdNYFq7ypq1K0',
+        // clientId and scope are optional if auth is not required.
+        'clientId': '521376882978-ilm5l6j04rdu1cesektih1vp9cn8iqtk.apps.googleusercontent.com',
+        'scope': 'https://www.googleapis.com/auth/calendar.readonly',
+    }).then(function() {
+        // 3. Initialize and make the API request.
+        return gapi.client.request({
+        'path': 'https://www.googleapis.com/calendar/v3/calendars/bn0trnr1598i0m2j67h3qs5kh0@group.calendar.google.com/events',
+        })
+    }).then(function(response) {
+        console.log(response.result);
+    }, function(reason) {
+        console.log('Error: ' + reason.result.error.message);
+    });
+    };
+    // 1. Load the JavaScript client library.
+    gapi.load('client', start);
+    </script>
+</body>
+</html>
