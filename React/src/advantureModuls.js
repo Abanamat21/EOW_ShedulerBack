@@ -37,7 +37,7 @@ export function allModusls() {
             "Abyss"
           ],
           "color": "#8e24aa",
-          "iconPath": "content/img/icons/abyss.png",
+          "iconPath": "abyss.png",
           "systemId": 1
         },
         {
@@ -49,7 +49,7 @@ export function allModusls() {
             "Descent into Avernus"
           ],
           "color": "#f45329",
-          "iconPath": "content/img/icons/avernus.png",
+          "iconPath": "avernus.png",
           "systemId": 1
         },
         {
@@ -62,7 +62,7 @@ export function allModusls() {
             "Эбберон"
           ],
           "color": "#D5AC1D",
-          "iconPath": "content/img/icons/eberron.png",
+          "iconPath": "eberron.png",
           "systemId": 1
         },
         {
@@ -74,7 +74,7 @@ export function allModusls() {
             "Mulmaster"
           ],
           "color": "#055FC8",
-          "iconPath": "content/img/icons/elementalEvil.png",
+          "iconPath": "elementalEvil.png",
           "systemId": 1
         },
         {
@@ -84,7 +84,7 @@ export function allModusls() {
             "Гильдия"
           ],
           "color": "#450265",
-          "iconPath": "content/img/icons/guildOfHeroes.png",
+          "iconPath": "guildOfHeroes.png",
           "systemId": 1
         },
         {
@@ -94,7 +94,7 @@ export function allModusls() {
             "Hoard of the Dragon Queen"
           ],
           "color": "#008A69",
-          "iconPath": "content/img/icons/hoardOfTheDragonQueen.png",
+          "iconPath": "hoardOfTheDragonQueen.png",
           "systemId": 1
         },
         {
@@ -140,7 +140,7 @@ export function allSystems() {
             "ДнД"
           ],
           "color": "#000000",
-          "iconPath": "content/img/icons/dnd.png",
+          "iconPath": "dnd.png",
           "id": 1 
         },
         {
@@ -150,7 +150,7 @@ export function allSystems() {
             "Чужой"
           ],
           "color": "#8e24aa",
-          "iconPath": "content/img/icons/alien.png",
+          "iconPath": "alien.png",
           "id": 2
         },
         {
@@ -162,7 +162,7 @@ export function allSystems() {
             "Cthulhu"
           ],
           "color": "#0e4901",
-          "iconPath": "content/img/icons/cthulhu.png",
+          "iconPath": "cthulhu.png",
           "id": 3
         },
         {
@@ -172,7 +172,7 @@ export function allSystems() {
             "Dune"
           ],
           "color": "#8B4402",
-          "iconPath": "content/img/icons/dune.png",
+          "iconPath": "dune.png",
           "id": 4
         },
         {
@@ -182,7 +182,7 @@ export function allSystems() {
             "Старфайндер"
           ],
           "color": "#10b4e9",
-          "iconPath": "content/img/icons/starfinder.png",
+          "iconPath": "starfinder.png",
           "id": 5
         },
         {
@@ -193,7 +193,7 @@ export function allSystems() {
             "Вархаммер"
           ],
           "color": "#0e4901",
-          "iconPath": "content/img/icons/warhammer.png",
+          "iconPath": "warhammer.png",
           "id": 6
         },
         {
@@ -204,7 +204,7 @@ export function allSystems() {
             "Дельта Грин"
           ],
           "color": "#0e4901",
-          "iconPath": "content/img/icons/cthulhu.png",
+          "iconPath": "cthulhu.png",
           "id": 7
         },
         {
@@ -214,7 +214,7 @@ export function allSystems() {
             "Киберпанк"
           ],
           "color": "#fdf000",
-          "iconPath": "content/img/icons/cyberpunk.png",
+          "iconPath": "cyberpunk.png",
           "id": 8
         },
         {
@@ -224,7 +224,7 @@ export function allSystems() {
             "Shinobi"
           ],
           "color": "#888888",
-          "iconPath": "content/img/icons/feather.png",
+          "iconPath": "feather.png",
           "id": 9
         },
         {
@@ -233,7 +233,7 @@ export function allSystems() {
             "Кавалерия"
           ],
           "color": "#f45329",
-          "iconPath": "content/img/icons/feather.png",
+          "iconPath": "feather.png",
           "id": 10
         },
         {
@@ -242,7 +242,7 @@ export function allSystems() {
             "Культ", "Kult"
           ],
           "color": "#000000",
-          "iconPath": "content/img/icons/kult.png",
+          "iconPath": "kult.png",
           "id": 11
         },
         {
@@ -251,7 +251,7 @@ export function allSystems() {
             "Mork Borg"
           ],
           "color": "#f45329",
-          "iconPath": "content/img/icons/feather.png",
+          "iconPath": "feather.png",
           "id": 12
         },
         {
@@ -260,7 +260,7 @@ export function allSystems() {
             "Savage World"
           ],
           "color": "#f45329",
-          "iconPath": "content/img/icons/feather.png",
+          "iconPath": "feather.png",
           "id": 13
         }
       ]
