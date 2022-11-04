@@ -113,6 +113,16 @@ export function allModusls() {
           ],
           "color": "#920101",
           "systemId": 1
+        },
+        {
+          "name": "Драконий Куш",
+          "keyWords": [
+            "Драконий Куш",
+            "Драконний Куш",
+            "Dragon Heist"
+          ],
+          "color": "#008A69",
+          "systemId": 1
         }
     ]
     return ret;
@@ -225,6 +235,33 @@ export function allSystems() {
           "color": "#f45329",
           "iconPath": "content/img/icons/feather.png",
           "id": 10
+        },
+        {
+          "name": "Культ",
+          "keyWords": [
+            "Культ", "Kult"
+          ],
+          "color": "#000000",
+          "iconPath": "content/img/icons/kult.png",
+          "id": 11
+        },
+        {
+          "name": "Mork Borg",
+          "keyWords": [
+            "Mork Borg"
+          ],
+          "color": "#f45329",
+          "iconPath": "content/img/icons/feather.png",
+          "id": 12
+        },
+        {
+          "name": "Savage World",
+          "keyWords": [
+            "Savage World"
+          ],
+          "color": "#f45329",
+          "iconPath": "content/img/icons/feather.png",
+          "id": 13
         }
       ]
     return ret;
