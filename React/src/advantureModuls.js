@@ -123,6 +123,16 @@ export function allModusls() {
           ],
           "color": "#008A69",
           "systemId": 1
+        },
+        {
+          "name": "Лихо",
+          "keyWords": [
+            "Лихо",
+            "Lyho"
+          ],
+          "iconPath": "lyho.png",
+          "color": "#0e4901",
+          "systemId": 6
         }
     ]
     return ret;
@@ -233,7 +243,7 @@ export function allSystems() {
             "Кавалерия"
           ],
           "color": "#f45329",
-          "iconPath": "feather.png",
+          "iconPath": "cavalry.png",
           "id": 10
         },
         {
@@ -251,7 +261,7 @@ export function allSystems() {
             "Mork Borg"
           ],
           "color": "#f45329",
-          "iconPath": "feather.png",
+          "iconPath": "morkBorg.png",
           "id": 12
         },
         {
@@ -260,8 +270,41 @@ export function allSystems() {
             "Savage World"
           ],
           "color": "#f45329",
-          "iconPath": "feather.png",
+          "iconPath": "savageWorlds.png",
           "id": 13
+        },
+        {
+          "name": "FATE",
+          "keyWords": [
+            "Fate",
+            "Фэйт"
+          ],
+          "color": "#f45329",
+          "iconPath": "fate.png",
+          "id": 14
+        },
+        {
+          "name": "City Of Mist",
+          "keyWords": [
+            "City Of Mist"
+          ],
+          "color": "#f45329",
+          "iconPath": "cityOfMist.png",
+          "id": 15
+        },
+        {
+          "name": "Vampire: The Masquerade",
+          "keyWords": [
+            "vtm",
+            "Vampire: The Masquerade",
+            "Vampire The Masquerade",
+            "Вампиры, маскарад",
+            "Вампиры: маскарад",
+            "Вампиры маскарад"
+          ],
+          "color": "#f45329",
+          "iconPath": "vtm.png",
+          "id": 16
         }
       ]
     return ret;
