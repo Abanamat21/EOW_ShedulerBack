@@ -36,7 +36,7 @@ export function allModusls() {
             "Out of the Abyss",
             "Abyss"
           ],
-          "color": "#8e24aa",
+          "color": "#762D6A",
           "iconPath": "abyss.png",
           "systemId": 1
         },
@@ -48,7 +48,7 @@ export function allModusls() {
             "Avernus",
             "Descent into Avernus"
           ],
-          "color": "#f45329",
+          "color": "#FEE500",
           "iconPath": "avernus.png",
           "systemId": 1
         },
@@ -61,7 +61,7 @@ export function allModusls() {
             "Eberron",
             "Эбберон"
           ],
-          "color": "#D5AC1D",
+          "color": "#E37A33",
           "iconPath": "eberron.png",
           "systemId": 1
         },
@@ -73,7 +73,7 @@ export function allModusls() {
             "Мулмастер",
             "Mulmaster"
           ],
-          "color": "#055FC8",
+          "color": "#006CB4",
           "iconPath": "elementalEvil.png",
           "systemId": 1
         },
@@ -83,7 +83,7 @@ export function allModusls() {
             "Гильдия Героев",
             "Гильдия"
           ],
-          "color": "#450265",
+          "color": "#61398B",
           "iconPath": "guildOfHeroes.png",
           "systemId": 1
         },
@@ -93,7 +93,7 @@ export function allModusls() {
             "Клад Королевы Драконов",
             "Hoard of the Dragon Queen"
           ],
-          "color": "#008A69",
+          "color": "#8D6CAB",
           "iconPath": "hoardOfTheDragonQueen.png",
           "systemId": 1
         },
@@ -102,7 +102,7 @@ export function allModusls() {
           "keyWords": [
             "Масти Туманов"
           ],
-          "color": "#0e4901",
+          "color": "#1E7040",
           "systemId": 1
         },
         {
@@ -111,7 +111,7 @@ export function allModusls() {
             "Туманы Рейвенлофта",
             "Туманы Рейвенфлота"
           ],
-          "color": "#920101",
+          "color": "#B12629",
           "systemId": 1
         },
         {
@@ -121,7 +121,7 @@ export function allModusls() {
             "Драконний Куш",
             "Dragon Heist"
           ],
-          "color": "#008A69",
+          "color": "#FFD700",
           "systemId": 1
         },
         {
@@ -131,7 +131,7 @@ export function allModusls() {
             "Lyho"
           ],
           "iconPath": "lyho.png",
-          "color": "#0e4901",
+          "color": "#48331C",
           "systemId": 6
         }
     ]
@@ -149,7 +149,7 @@ export function allSystems() {
             "D&D",
             "ДнД"
           ],
-          "color": "#000000",
+          "color": "#e8443c",
           "iconPath": "dnd.png",
           "id": 1 
         },
@@ -159,7 +159,7 @@ export function allSystems() {
             "Alien",
             "Чужой"
           ],
-          "color": "#8e24aa",
+          "color": "#202B34",
           "iconPath": "alien.png",
           "id": 2
         },
@@ -171,7 +171,7 @@ export function allSystems() {
             "Call of Cthulhu",
             "Cthulhu"
           ],
-          "color": "#0e4901",
+          "color": "#273B33",
           "iconPath": "cthulhu.png",
           "id": 3
         },
@@ -181,7 +181,7 @@ export function allSystems() {
             "Дюна",
             "Dune"
           ],
-          "color": "#8B4402",
+          "color": "#DA8020",
           "iconPath": "dune.png",
           "id": 4
         },
@@ -191,7 +191,7 @@ export function allSystems() {
             "Starfinder",
             "Старфайндер"
           ],
-          "color": "#10b4e9",
+          "color": "#0092C9",
           "iconPath": "starfinder.png",
           "id": 5
         },
@@ -202,7 +202,7 @@ export function allSystems() {
             "Молот войны",
             "Вархаммер"
           ],
-          "color": "#0e4901",
+          "color": "#B1302A",
           "iconPath": "warhammer.png",
           "id": 6
         },
@@ -213,7 +213,7 @@ export function allSystems() {
             "Delta",
             "Дельта Грин"
           ],
-          "color": "#0e4901",
+          "color": "#589C63",
           "iconPath": "cthulhu.png",
           "id": 7
         },
@@ -223,7 +223,7 @@ export function allSystems() {
             "Cyberpunk",
             "Киберпанк"
           ],
-          "color": "#fdf000",
+          "color": "#FDE100",
           "iconPath": "cyberpunk.png",
           "id": 8
         },
@@ -233,7 +233,7 @@ export function allSystems() {
             "Шиноби",
             "Shinobi"
           ],
-          "color": "#888888",
+          "color": "#202B34",
           "iconPath": "feather.png",
           "id": 9
         },
@@ -242,7 +242,7 @@ export function allSystems() {
           "keyWords": [
             "Кавалерия"
           ],
-          "color": "#f45329",
+          "color": "#E5801C",
           "iconPath": "cavalry.png",
           "id": 10
         },
@@ -251,7 +251,7 @@ export function allSystems() {
           "keyWords": [
             "Культ", "Kult"
           ],
-          "color": "#000000",
+          "color": "#B12629",
           "iconPath": "kult.png",
           "id": 11
         },
@@ -260,7 +260,7 @@ export function allSystems() {
           "keyWords": [
             "Mork Borg"
           ],
-          "color": "#f45329",
+          "color": "#FDE100",
           "iconPath": "morkBorg.png",
           "id": 12
         },
@@ -269,7 +269,7 @@ export function allSystems() {
           "keyWords": [
             "Savage World"
           ],
-          "color": "#f45329",
+          "color": "#B3B3B0",
           "iconPath": "savageWorlds.png",
           "id": 13
         },
@@ -279,7 +279,7 @@ export function allSystems() {
             "Fate",
             "Фэйт"
           ],
-          "color": "#f45329",
+          "color": "#008BCC",
           "iconPath": "fate.png",
           "id": 14
         },
@@ -288,7 +288,7 @@ export function allSystems() {
           "keyWords": [
             "City Of Mist"
           ],
-          "color": "#f45329",
+          "color": "#263F8C",
           "iconPath": "cityOfMist.png",
           "id": 15
         },
@@ -302,7 +302,7 @@ export function allSystems() {
             "Вампиры: маскарад",
             "Вампиры маскарад"
           ],
-          "color": "#f45329",
+          "color": "#B12629",
           "iconPath": "vtm.png",
           "id": 16
         }
