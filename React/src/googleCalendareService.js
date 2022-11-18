@@ -16,7 +16,7 @@ const API_KEY = 'AIzaSyAYbnPQEY7b93FYcihBx0zzYz2g0G3D3Mo'
 const SCOPES = 'https://www.googleapis.com/auth/calendar.readonly';
 const CALENDARID = 'bn0trnr1598i0m2j67h3qs5kh0@group.calendar.google.com';
 
-const DEFAULTCOLOR = '#000000';
+const DEFAULTCOLOR = '#3f3b52';
 const DEFAULTICONPATH = 'content/img/icons/dnd.png';
 const WEEKDAYS = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 const DAYCOUNT = 14;
